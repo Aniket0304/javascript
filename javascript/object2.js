@@ -18,3 +18,19 @@ const obj3 = Object.assign({} , obj1 , obj2) // the synatax is Object.assign(tar
 
 console.log(obj3);
 
+const user = [
+{
+    id : 1 ,
+    email : "aniketdubey0124@gmail.com"
+}, 
+{
+    name : "aniket"
+},
+{
+    name : "Tushar"
+}
+]
+
+console.log(user[2].name)
+
+console.log(Object.keys(user))
