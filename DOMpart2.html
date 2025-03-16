@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style = "background-color: #212121; color: #ffff;">
+</body>
+<script>
+    // const div = document.createElement('div');
+    // console.log(div);
+    // div.className = "holiday" // ye class name ke liye hai 
+    // div.id = Math.round(Math.random()*10 + 1) // ye id ke liye
+    // div.setAttribute('title', 'I am a div') // ye attribute set karne ke liye hai
+    // div.backgroundColor = "red" 
+    // div.padding = "10px"
+    // //div.innerHTML = "chai aur code" // ye ek tareeka hai lekin ek tareeka aur hai 
+    
+    // // ye ek naya tareeka hai 
+    // const addtext = document.createTextNode("chai aur code")
+    // div.appendChild(addtext)
+    // document.body.appendChild(div)
+
+    function addelement(text , color , padding){
+        const div = document.createElement('div');
+        console.log(div);
+        div.className = "holiday" // ye class name ke liye hai 
+        div.id = Math.round(Math.random()*10 + 1) // ye id ke liye
+        div.setAttribute('title', 'I am a div') // ye attribute set karne ke liye hai
+        div.style.backgroundColor = color 
+        div.style.padding = padding
+        //div.innerHTML = "chai aur code" // ye ek tareeka hai lekin ek tareeka aur hai 
+        
+        // ye ek naya tareeka hai 
+        const addtext = document.createTextNode(text)
+        div.appendChild(addtext)
+        document.body.appendChild(div)
+    }
+
+    addelement("chai aur code", "red", "10px")
+
+</script>
+</html>
